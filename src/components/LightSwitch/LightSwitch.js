@@ -3,7 +3,7 @@ import './LightSwitch.css'
 import  switchOn from '../images/switch-on.png'
 import switchOff from '../images/switch-off.png'
 import light from '../images/lightbulb.jpg'
-
+import dark from '../images/lightbulb-black.jpg'
 
 class Switch extends Component {
     constructor(props) {
@@ -24,7 +24,7 @@ class Switch extends Component {
         if (switchStatus) { // if switch status is true
            this.setState({switchStatus: false})  // make the switchStatus state to false
            this.setState({switchImage: switchOff})
-           this.setState({lightImage: ''})
+           this.setState({lightImage: dark})
 
            
         } else { // if switch status is false
@@ -43,7 +43,7 @@ class Switch extends Component {
 
         
         return (
-            <div>
+            <div className="switch">
                 <div className="light-box">
                     <img src={lightImage}/>
                 </div>
