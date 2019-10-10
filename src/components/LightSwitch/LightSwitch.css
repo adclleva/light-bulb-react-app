@@ -1,0 +1,13 @@
+img {
+    width: 10em;
+}
+
+.light-box {
+    margin: auto ;
+    margin-right: auto;
+    padding: 2rem;
+    display: block;
+    width: 50%;
+    background-color: black;
+    position: fixed;
+}
